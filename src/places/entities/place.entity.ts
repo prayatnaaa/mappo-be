@@ -17,10 +17,10 @@ export class Place {
   @Column({ name: 'description', type: 'text', nullable: true })
   desc: string;
 
-  @Column()
+  @Column({ type: 'double' })
   latitude: number;
 
-  @Column()
+  @Column({ type: 'double' })
   longitude: number;
 
   @CreateDateColumn()
